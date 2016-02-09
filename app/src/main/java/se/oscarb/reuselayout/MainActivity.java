@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout mainContainer;
     // Deklarera en textView
     TextView greeting;
+    MyBigTextView biggerGreeting;
 
     // Klassvariabler
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Initiera en textview
         greeting = new TextView(this);
+        biggerGreeting = new MyBigTextView(this);
 
         // Ändra på attributen för vår TextView
         greeting.setText("Hello world!"); // TODO: Fixa i strings.xml
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Lägg till text i main_container
         mainContainer.addView(greeting);
+        mainContainer.addView(biggerGreeting);
 
     }
 
